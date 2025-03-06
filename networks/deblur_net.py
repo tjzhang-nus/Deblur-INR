@@ -2,7 +2,6 @@
 from torchinfo import summary
 from networks.skip import skip
 import numpy as np
-from networks.networks_res import ResnetBlock, get_norm_layer
 from networks.siren import *
 
 def fcn(num_input_channels=200, num_output_channels=21, num_hidden=1000):
