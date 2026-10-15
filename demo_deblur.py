@@ -239,7 +239,7 @@ for f in files_source:
             out_k_m1_g1[:, :, 1::2, :] *= -1
             out_k_m1_g2 = kernel1.clone()
             out_k_m1_g2[:, :, :, 1::2] *= -1
-            out_k_m1_g3 = kernel1.clone()
+            out_k_m1_g3 = out_k_m1_g1.clone()
             out_k_m1_g3[:, :, :, 1::2] *= -1
             out_k_m1 = kernel1.repeat(3, 1, 1, 1)
             out_k_m1_g1 = out_k_m1_g1.repeat(3, 1, 1, 1)
